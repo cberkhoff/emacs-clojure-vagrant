@@ -8,6 +8,11 @@ sudo apt-get update
 sudo apt-get install -y emacs-snapshot git-core rlwrap openjdk-6-jdk tmux \
     curl tree unzip
 
+# dotfiles
+mkdir -p ~/bin/
+cp -r /vagrant/dotfiles/.* ~
+emacs --batch -l .emacs.d/init.el -f package-updates
+
 # Leiningen
 if [ ! -r ~/bin/lein ]; then
     wget -O ~/bin/lein https://github.com/technomancy/leiningen/raw/stable/bin/lein
