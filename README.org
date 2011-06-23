@@ -1,5 +1,10 @@
 * Vagrant setup for Seajure hack nights.
 As an attempt to get a reasonable development environment quickly for Seajure hacknights, I setup a shareable virtualbox via Vagrant. Let's all play along!
+** Setup
+   - Install VirtualBox 4.x: http://www.virtualbox.org/wiki/Downloads
+   - Install VirtualBox Extension Pack: http://download.virtualbox.org/virtualbox/4.0.8/Oracle_VM_VirtualBox_Extension_Pack-4.0.8-71778.vbox-extpack
+   - gem install vagrant
+   - vagrant up # inside the directory containing this readme
 ** Contents
    - Emacs 24 (with starter kit 2)
    - tmux (with better config)
