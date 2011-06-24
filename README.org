@@ -5,6 +5,12 @@ As an attempt to get a reasonable development environment quickly for Seajure ha
    - Install [[http://download.virtualbox.org/virtualbox/4.0.8/Oracle_VM_VirtualBox_Extension_Pack-4.0.8-71778.vbox-extpack][VirtualBox Extension Pack]]
    - =gem install vagrant= # install rubygems first if necessary
    - =vagrant up= # inside the directory containing this readme
+** Usage
+   Once Vagrant provisions your VM, use =vagrant ssh= to log in. Your
+   VM will have a Jark swank session running, so you can immediately
+   start Emacs and do =M-x slime-connect= to port 4005. You can start
+   a new project with =lein new myproject= or pull down an existing
+   project to hack on via git.
 ** Contents
    - Emacs 24 (with starter kit 2 and relevant Clojure modes)
    - tmux (with better config)
