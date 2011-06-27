@@ -1,5 +1,7 @@
 #!/bin/bash
 
+shopt -s dotglob
+
 # Thanks to @bretthoerner for the ubuntu mirror of emacs 24
 wget -q -O - http://emacs.naquadah.org/key.gpg | sudo apt-key add -
 echo "deb http://emacs.naquadah.org/ natty/" >> /etc/apt/sources.list
@@ -10,7 +12,9 @@ sudo apt-get install -y emacs-snapshot git-core rlwrap openjdk-6-jdk tmux \
 
 # dotfiles
 mkdir -p ~/bin/
-cp -r /vagrant/dotfiles/.* ~
+for i in /vagrant/dotfiles/*; do
+  cp $i $HOME/
+done;
 emacs --batch -l .emacs.d/init.el -f package-updates
 
 # Leiningen
