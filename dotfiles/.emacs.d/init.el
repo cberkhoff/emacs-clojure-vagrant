@@ -3,6 +3,8 @@
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
+(setq slime-net-coding-system 'utf-8-unix)
+
 (global-set-key (kbd "C-c C-j") 'clojure-jack-in)
 
 (set-face-foreground 'vertical-border
