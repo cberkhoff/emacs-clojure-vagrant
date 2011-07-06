@@ -13,7 +13,7 @@ sudo apt-get install -y emacs-snapshot git-core rlwrap openjdk-6-jdk tmux \
 # dotfiles
 mkdir -p ~/bin/
 for i in /vagrant/dotfiles/*; do
-  cp $i $HOME/
+  cp -r $i $HOME/
 done;
 emacs --batch -l .emacs.d/init.el -f package-updates
 
