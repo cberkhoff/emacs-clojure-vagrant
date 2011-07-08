@@ -16,3 +16,10 @@ As an attempt to get a reasonable development environment quickly for Seajure ha
    - tmux (with better config)
    - [[http://github.com/technomancy/leiningen][Leiningen]]
    - [[http://icylisper.in/jark/][Jark]]
+** Troubleshooting
+   A standard Ubuntu 10.04 install (YMMV for other distros/versions) doesn't have the appropriate ruby setup and needs
+   some additional =apt-get=-ing to install vagrant. Assuming only that VirtualBox is installed, the following additional
+   steps need to be performed before you can run =gem install vagrant=:  
+   - Run =sudo apt-get install rubygems1.8 ruby-dev libopenssl-ruby=
+   - Next do a =sudo gem install rubygems-update= and =sudo /var/lib/gems/1.8/bin/update_rubygems= to get the latest rubygems
+   At this point you should be able to do a =gem install vagrant= 
