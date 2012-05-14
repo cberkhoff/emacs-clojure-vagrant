@@ -1,8 +1,9 @@
-* Vagrant setup for Seajure hack nights.
+* Vagrant setup for Clojure
+Just updated the [[https://github.com/Seajure/emacs-clojure-vagrant][Seajure]] version.
 As an attempt to get a reasonable development environment quickly for Seajure hacknights, I setup a shareable virtualbox via Vagrant. Let's all play along!
 ** Setup
    - Install [[http://www.virtualbox.org/wiki/Downloads][VirtualBox 4.x]]
-   - Install [[http://download.virtualbox.org/virtualbox/4.0.8/Oracle_VM_VirtualBox_Extension_Pack-4.0.8-71778.vbox-extpack][VirtualBox Extension Pack]]
+   - Install [[http://www.virtualbox.org/wiki/Downloads][VirtualBox Extension Pack (Same Page)]]
    - =gem install vagrant= # install rubygems first if necessary
    - =vagrant up= # inside the directory containing this readme
 ** Usage
