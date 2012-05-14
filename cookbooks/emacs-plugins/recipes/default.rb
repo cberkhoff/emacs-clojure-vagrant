@@ -10,4 +10,7 @@ execute "swank" do
   command "lein plugin install swank-clojure 1.4.2"
   action :run
   user "vagrant"
+  group "vagrant"
+  cwd "/home/vagrant/"
+  environment ({'HOME' => '/home/vagrant/'})
 end
