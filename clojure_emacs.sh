@@ -4,8 +4,8 @@ shopt -s dotglob
 
 # Thanks to @bretthoerner for the ubuntu mirror of emacs 24
 wget -q -O - http://emacs.naquadah.org/key.gpg | sudo apt-key add -
-echo "deb http://emacs.naquadah.org/ natty/
-deb-src http://emacs.naquadah.org/ natty/" >> /etc/apt/sources.list.d/naquadah.list
+echo "deb http://emacs.naquadah.org/ stable/
+deb-src http://emacs.naquadah.org/ stable/" >> /etc/apt/sources.list.d/naquadah.list
 sudo apt-get update
 sudo apt-get install -y emacs-snapshot git-core rlwrap openjdk-6-jdk tmux \
     curl tree unzip
