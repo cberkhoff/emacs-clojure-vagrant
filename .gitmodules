@@ -7,3 +7,6 @@
 [submodule "cookbooks/git"]
 	path = cookbooks/git
 	url = git://github.com/opscode-cookbooks/git.git
+[submodule "cookbooks/postgresql"]
+	path = cookbooks/postgresql
+	url = https://github.com/opscode-cookbooks/postgresql.git

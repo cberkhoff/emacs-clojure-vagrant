@@ -18,4 +18,4 @@ Contents
 - Git
 - Leiningen
 - Emacs
-- Postgres
+- Postgresql
