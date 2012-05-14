@@ -1,10 +1,11 @@
 * Vagrant setup for Clojure
 Just updated the [[https://github.com/Seajure/emacs-clojure-vagrant][Seajure]] version.
 ** Setup
-   - Install [[http://www.virtualbox.org/wiki/Downloads][VirtualBox 4.x]]
-   - Install [[http://www.virtualbox.org/wiki/Downloads][VirtualBox Extension Pack (Same Page)]]
-   - =gem install vagrant= # install rubygems first if necessary
-   - =vagrant up= # inside the directory containing this readme
+   - Vagrant [[http://vagrantup.com/docs/getting-started/index.html][Vagrant Getting Started]]
+      - Install [[http://www.virtualbox.org/wiki/Downloads][VirtualBox 4.x]]
+      - Install [[http://www.virtualbox.org/wiki/Downloads][VirtualBox Extension Pack (Same Page)]]
+      - Install [[http://downloads.vagrantup.com/][Vagrant]]
+      - =vagrant up= # inside the directory containing this readme
 ** Usage
    Once Vagrant provisions your VM, use =vagrant ssh= to log in. Your
    VM will have a Jark swank session running, so you can immediately
